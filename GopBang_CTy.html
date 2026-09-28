@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Họp Công Ty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            max-width: 700px;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tiêu đề <h1> -->
+    <h1>Lịch họp công ty</h1>
+
+    <!-- Bảng thông tin lịch họp -->
+    <table>
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Gộp 2 dòng ở cột Ngày (dùng rowspan) vì Thứ 2 có 2 cuộc họp -->
+                <td rowspan="2">Thứ 2 (05/10)</td>
+                <td>08:00 - 09:00</td>
+                <td>Họp giao ban đầu tuần</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>Họp phòng Bán hàng</td>
+            </tr>
+            <tr>
+                <!-- Cuộc họp kéo dài từ 14:00 đến 17:00 (Gộp ô bằng colspan) -->
+                <td>Thứ 3 (06/10)</td>
+                <td colspan="2">14:00 - 17:00 (Cả chiều): Tập huấn nhân sự mới</td>
+            </tr>
+            <tr>
+                <!-- Gộp 2 dòng ở cột Ngày -->
+                <td rowspan="2">Thứ 4 (07/10)</td>
+                <td>09:00 - 10:00</td>
+                <td>Đánh giá tiến độ dự án A</td>
+            </tr>
+            <tr>
+                <td>15:00 - 16:30</td>
+                <td>Gặp gỡ đối tác khách hàng</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
