@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research Survey</title>
+    <style>
+        body {
+            font-family: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;
+            background-color: #f0f3f5;
+            padding: 30px;
+            color: #333;
+        }
+        .container {
+            background-color: #ffffff;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 30px 40px;
+            border-top: 5px solid #2980b9;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        p.description {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label.main-label {
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        label.main-label span.req {
+            color: #e74c3c;
+        }
+        select, input[type="text"], textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 13px;
+        }
+        select {
+            height: 35px;
+        }
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        .radio-list, .checkbox-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .radio-list li, .checkbox-list li {
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        .radio-list input, .checkbox-list input {
+            margin-right: 8px;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Market Research Survey</h1>
+    <p class="description">Please take a few minutes to give us feedback about our service by filling out the form below.</p>
+
+    <form action="#" method="POST">
+        
+        <!-- What is your age category? -->
+        <div class="form-group">
+            <label class="main-label">What is your age category? <span class="req">*</span></label>
+            <select name="age_group" required>
+                <option value="">-- Please Select --</option>
+                <option value="18-24">18 - 24</option>
+                <option value="25-34">25 - 34</option>
+                <option value="35-50">35 - 50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+
+        <!-- What is your gender? -->
+        <div class="form-group">
+            <label class="main-label">What is your gender?</label>
+            <ul class="radio-list">
+                <li><label><input type="radio" name="gender" value="Male"> Male</label></li>
+                <li><label><input type="radio" name="gender" value="Female"> Female</label></li>
+                <li><label><input type="radio" name="gender" value="Non-binary"> Non-binary / Other</label></li>
+            </ul>
+        </div>
+
+        <!-- Which of our products/services do you use? -->
+        <div class="form-group">
+            <label class="main-label">Which of our products/services do you use? (Select all that apply)</label>
+            <ul class="checkbox-list">
+                <li><label><input type="checkbox" name="services" value="Product A"> Product / Service A</label></li>
+                <li><label><input type="checkbox" name="services" value="Product B"> Product / Service B</label></li>
+                <li><label><input type="checkbox" name="services" value="Product C"> Product / Service C</label></li>
+            </ul>
+        </div>
+
+        <!-- How satisfied are you with our service? -->
+        <div class="form-group">
+            <label class="main-label">How satisfied are you with our overall service?</label>
+            <ul class="radio-list">
+                <li><label><input type="radio" name="satisfaction" value="Very Satisfied"> Very Satisfied</label></li>
+                <li><label><input type="radio" name="satisfaction" value="Satisfied"> Satisfied</label></li>
+                <li><label><input type="radio" name="satisfaction" value="Neutral"> Neutral</label></li>
+                <li><label><input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied</label></li>
+            </ul>
+        </div>
+
+        <!-- Feedback / Comments -->
+        <div class="form-group">
+            <label class="main-label">Do you have any comments or suggestions for us?</label>
+            <textarea name="comments" placeholder="Write your feedback here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <input type="submit" value="Submit Survey" class="submit-btn">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
